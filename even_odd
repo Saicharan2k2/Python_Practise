@@ -1,3 +1,5 @@
+# product of sum of even place digits and sum of odd place digits
+
 rate = list(map(int,input("Enter rate :: ")))
 even = []
 odd = []
@@ -7,3 +9,9 @@ for i in rate:
     else:
         odd.append(i)
 print(sum(even)*sum(odd))
+
+output :
+==========
+
+Enter rate :: 69432
+144
