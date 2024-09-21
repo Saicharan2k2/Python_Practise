@@ -1,0 +1,9 @@
+rate = list(map(int,input("Enter rate :: ")))
+even = []
+odd = []
+for i in rate:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(sum(even)*sum(odd))
