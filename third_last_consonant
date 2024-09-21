@@ -1,0 +1,19 @@
+def print_third_last_consonant():
+    length= int(input("Enter string length::"))
+    string = input("Enter string:: ").strip().lower()
+    consonants = []
+    vowels = "aeiou"
+    for letter in reversed(string):
+        if letter.isalpha() and letter not in vowels:
+            consonants.append(letter)
+        if(len(consonants)==3):
+            print(consonants[-1])
+            return
+print_third_last_consonant()
+
+output:
+=======
+
+Enter string length::6
+Enter string:: DBfIoJ
+b
