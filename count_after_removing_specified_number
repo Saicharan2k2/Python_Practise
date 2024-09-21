@@ -1,0 +1,13 @@
+number = list(map(int,input("Enter a number ::")))
+digit = int(input("Enter a number to remove ::"))
+res = []
+for i in number:
+    if i!=digit:
+        res.append(i)
+print("Length after removing specified number :",len(res))
+
+output :
+========
+Enter a number ::898900
+Enter a number to remove ::9
+Length after removing specified number : 4
