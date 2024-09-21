@@ -1,0 +1,16 @@
+def pairs_count(n,l):
+    set_nu = set(l)
+    pairs = 0
+    for i in set_nu:
+        cc = l.count(i)
+        pairs+=cc//2
+    return pairs
+n = int(input("Enter size :"))    
+l = list(map(int,input("Enter numbers :").split()))
+print(pairs_count(n,l))
+
+output :
+=========
+Enter size :9
+Enter numbers :10 20 20 10 10 30 50 10 20
+3
